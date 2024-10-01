@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Matrix Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Calculator</h1>
+        <div class="matrix-inputs">
+            <div class="matrix">
+                <h3>Matrix A</h3>
+                <div class="matrix-grid">
+                    <textarea id="a00"></textarea>
+                    <textarea id="a01"></textarea>
+                    <textarea id="a10"></textarea>
+                    <textarea id="a11"></textarea>
+                </div>
+            </div>
+            <div class="matrix">
+                <h3>Matrix B</h3>
+                <div class="matrix-grid">
+                    <textarea id="b00"></textarea>
+                    <textarea id="b01"></textarea>
+                    <textarea id="b10"></textarea>
+                    <textarea id="b11"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="performOperation('add')">Add</button>
+            <button onclick="performOperation('subtract')">Subtract</button>
+            <button onclick="performOperation('multiply')">Multiply</button>
+        </div>
+        <div class="result">
+            <h3>Result</h3>
+            <pre id="result"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
